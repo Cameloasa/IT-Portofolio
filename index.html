@@ -11,7 +11,7 @@
 
     <!-- Header Section -->
     <header id="home">
-        <nav class="navbar">
+        <nav class="navbar container">
             <a href="#home" class="logo">My IT Portfolio</a>
 
             <ul class="nav-links">
@@ -27,26 +27,191 @@
 
     <!-- Main Content Section -->
     <main class="container">
+        
         <section id="hero" class="hero">
-            <h1>Welcome to My IT Portfolio</h1>
-            <p>IT enthusiast building skills in software development, testing, and cloud technologies.</p>
-            <a href="#projects">View My Projects</a>
+            <p class="hero-intro">WELCOME TO MY IT PORTFOLIO</p>
+
+            <h1>Building My Future in IT</h1>
+
+            <p class="hero-description">
+                Developing practical skills in software testing,
+                Web3 solutions, and cloud technologies.
+            </p>
+
+            <a href="#projects" class="button">View My Projects</a>
         </section>
 
+        <!-- About Me Section -->
         <section id="about" class="about">
             <h2>About Me</h2>
-            <p>A short introduction about my professional background and career goals.</p>
+
+            <p>
+                I am an aspiring IT professional with a background in
+                education, administration, and business. I am currently
+                developing my technical skills in software testing,
+                Python programming, web development, and cloud technologies.
+            </p>
+
+            <p>
+                Through coursework and practical projects, I am building
+                my understanding of how software is developed, tested,
+                and delivered. I enjoy learning new technologies, solving
+                problems, and turning ideas into practical solutions.
+            </p>
+
+            <p>
+                My previous professional experience has strengthened my
+                communication, analytical thinking, and organisational
+                skills. I aim to combine these strengths with my growing
+                technical knowledge to contribute to meaningful IT projects
+                and continue developing as a professional.
+            </p>
         </section>
 
+        <!-- Skills Section -->
         <section id="skills" class="skills">
-            <h2>Skills</h2>
-            <p>Technologies and tools I am learning and using.</p>
+            <h2>Technical Skills</h2>
+
+            <p>
+                Technologies and tools I have explored through
+                coursework and practical projects.
+            </p>
+
+            <div class="skills-container">
+
+                <div class="skill-card">
+                    <h3>Software Testing</h3>
+                    <p>Python, pytest, Playwright, Gherkin, Postman</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Programming & Web Development</h3>
+                    <p>Python, Java, JavaScript, HTML, CSS, React, SQL</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Cloud & DevOps</h3>
+                    <p>AWS, Docker, Git, GitHub, GitHub Actions</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Web3 & Integrations</h3>
+                    <p>REST APIs, blockchain fundamentals, stablecoin payment concepts</p>
+                </div>
+
+            </div>
         </section>
 
+        <!-- Projects Section -->
         <section id="projects" class="projects">
-            <h2>Projects</h2>
-            <p>A selection of my IT projects.</p>
+            <h2>Featured Projects</h2>
+            <p>A selection of my coursework and practical IT projects.</p>
+
+            <div class="projects-container">
+
+                <!-- Project 1: Frontend -->
+                <article class="project-card">
+
+                    <img
+                        src="images/bortakvall.jpeg"
+                        alt="Screenshot of the Bortakväll webshop"
+                        class="project-image"
+                    >
+                    <p class="project-category">Frontend & Web Applications</p>
+                    <h3>Bortakväll Webshop</h3>
+                    <p>
+                        A React and TypeScript webshop that retrieves product data from a REST API and includes product pages, a checkout flow, and order submission.
+                    </p>
+                    <p class="project-tech">
+                        React · TypeScript · Vite · REST API
+                    </p>
+                    <div class="project-links">
+                        <a
+                            href="https://github.com/cameloasa-dev/bortakvall-ts"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View on GitHub ↗
+                        </a>
+                        
+                        <a
+                            href="https://stellar-shortbread-51457a.netlify.app/"
+                            class="button"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Live Demo ↗
+                        </a>
+                        
+                    </div>
+                </article>
+
+                <!-- Project 2: Full-stack -->
+                <article class="project-card">
+                    <p class="project-category">Full-Stack Development</p>
+                    <h3>Connecto</h3>
+                    <p>
+                        A full-stack application combining a React frontend
+                        with a FastAPI backend and an SQLite database.
+                    </p>
+                    <p class="project-tech">
+                        React · FastAPI · SQLite · Testing
+                    </p>
+                    <div class="project-links">
+                        <a
+                            href="https://github.com/cameloasa-dev/Connecto"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View on GitHub
+                        </a>
+                        <!-- Live Demo - enable when deployment URL is found
+                        <a
+                            href="#"
+                            class="button"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Live Demo
+                        </a>
+                        -->
+                    </div>
+                </article>
+
+                <!-- Project 3: Backend -->
+                <article class="project-card">
+                    <p class="project-category">Backend Development</p>
+                    <h3>Todo API</h3>
+                    <p>
+                        A Java backend project focused on REST API
+                        development and application security.
+                    </p>
+                    <p class="project-tech">
+                        Java · Spring Boot · REST API
+                    </p>
+                    <div class="project-links">
+                        <a
+                            href="https://github.com/cameloasa-dev/todo-api-java"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View on GitHub
+                        </a>
+                        <!-- Live Demo - enable when deployment URL is found
+                        <a
+                            href="#"
+                            class="button"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Live Demo
+                        </a>
+                        -->
+                    </div>
+                </article>
+            </div>
         </section>
+
 
         <section id="experience" class="experience">
             <h2>Experience & Education</h2>
