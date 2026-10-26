@@ -1,6 +1,6 @@
 
 /* =================================
-   1. DESIGN TOKENS
+1. DESIGN TOKENS
 ================================= */
 
 :root {
@@ -16,7 +16,7 @@
 
 
 /* =================================
-   2. RESET & BASE STYLES
+2. RESET & BASE STYLES
 ================================= */
 
 * {
@@ -51,7 +51,7 @@ p {
 
 
 /* =================================
-   3. LAYOUT & CONTAINERS
+3. LAYOUT & CONTAINERS
 ================================= */
 
 .container {
@@ -62,7 +62,7 @@ p {
 
 
 /* =================================
-   4. HEADER & NAVIGATION
+4. HEADER & NAVIGATION
 ================================= */
 
 header {
@@ -174,10 +174,6 @@ header {
     border-radius: 12px;
     padding: 24px;
     flex: 1 1 220px;
-}
-
-
-.skill-card {
     transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
@@ -204,9 +200,10 @@ header {
     margin-bottom: 40px;
 }
 
+
 .projects-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 24px;
 }
 
@@ -391,7 +388,7 @@ header {
 
 
 /* =================================
-   8. RESPONSIVE DESIGN
+8. RESPONSIVE DESIGN
 ================================= */
 
 @media (max-width: 600px) {
@@ -405,6 +402,10 @@ header {
         flex-wrap: wrap;
         justify-content: center;
         gap: 16px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
     }
 }
 
