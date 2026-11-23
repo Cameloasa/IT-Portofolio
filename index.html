@@ -14,12 +14,14 @@
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <title>My IT Portfolio | Camelia Ciuca</title>
     <link rel="stylesheet" href="style.css">
+    <script src="js/script.js" defer></script>
 </head>
+    
 <body>
     <!-- Trigger a new GitHub Pages deployment -->
     <!-- Header Section -->
     <header id="home">
-        <nav class="navbar container">
+        <nav class="navbar container" aria-label="Main navigation">
             <a href="#home" class="logo">My IT Portfolio | Camelia Ciuca</a>
 
             <ul class="nav-links">
@@ -27,9 +29,17 @@
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience & Education</a></li>
+                <li><a href="#experience">Background</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+
+            <button 
+                class="theme-toggle" 
+                type="button" 
+                aria-label="Switch to dark mode"
+                aria-pressed="false">
+                Dark Mode
+            </button>
         </nav>
     </header>
 
@@ -282,7 +292,7 @@
     
         <!-- Professional Experience -->
         <section id="experience" class="experience">
-            <h2>Experience & Education</h2>
+            <h2>Background</h2>
             <p class="section-intro">
                 My professional background, technical education,
                 and continuous learning in IT.
