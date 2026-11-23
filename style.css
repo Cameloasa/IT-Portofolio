@@ -108,11 +108,26 @@ header {
 5. MAIN & SECTIONS
 ================================= */
 
-.hero{
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
     padding: 80px 0;
+    max-width: 1100px;
+}
+
+.hero-content {
+    flex: 1;
     max-width: 750px;
 }
 
+.hero-image {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+}
 
 .hero-intro {
     color: var(--color-primary);
@@ -391,7 +406,7 @@ header {
 8. RESPONSIVE DESIGN
 ================================= */
 
-@media (max-width: 600px) {
+@media (max-width: 786px) {
 
     .navbar {
         flex-direction: column;
@@ -406,6 +421,18 @@ header {
 
     .projects-container {
         grid-template-columns: 1fr;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 32px;
+    }
+
+    .hero-image {
+        width: 200px;
+        height: 200px;
+        align-self: center;
     }
 }
 
