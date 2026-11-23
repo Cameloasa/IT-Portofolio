@@ -47,6 +47,3 @@ education, and previous professional experience.
 
 - [GitHub](https://github.com/cameloasa-dev)
 - [LinkedIn](https://www.linkedin.com/in/camelia-ciuca-217b242b/)
-
-![alt text](<picture1.png>)
-![alt text](<picture2.png>)
