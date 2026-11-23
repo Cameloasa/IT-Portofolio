@@ -74,7 +74,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px;
 }
 
 .logo {
@@ -109,24 +109,23 @@ header {
 ================================= */
 
 .hero {
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 280px;
     align-items: center;
-    justify-content: space-between;
     gap: 48px;
     padding: 80px 0;
-    max-width: 1100px;
 }
 
 .hero-content {
-    flex: 1;
-    max-width: 750px;
+    min-width: 0;
 }
 
 .hero-image {
-    width: 280px;
-    height: 280px;
+    width: 100%;
+    max-width: 280px;
+    aspect-ratio: 4 / 5;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 12px;
 }
 
 .hero-intro {
@@ -419,20 +418,37 @@ header {
         gap: 16px;
     }
 
+    .hero {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+    }
+
+    .hero-image {
+        justify-self: center;
+    }
+
     .projects-container {
         grid-template-columns: 1fr;
     }
 
-    .hero {
-        flex-direction: column-reverse;
-        align-items: flex-start;
-        gap: 32px;
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+        gap: 16px;
     }
 
-    .hero-image {
-        width: 200px;
-        height: 200px;
-        align-self: center;
+    .logo {
+        max-width: 100%;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
     }
 }
 
